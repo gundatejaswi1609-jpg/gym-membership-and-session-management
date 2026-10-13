@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+
+  :root {
+    --color-ivory: #FAF8F3;
+    --color-cream: #F2EEE5;
+    --color-sage: #B8C8AD;
+    --color-forest: #24483B;
+    --color-forest-dark: #1A362C;
+    --color-peach: #EBC9B8;
+    --color-lavender: #E6E0F1;
+    --color-charcoal: #292D29;
+    --color-muted-charcoal: #565D56;
+    --color-card-border: rgba(36, 72, 59, 0.08);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    color: var(--color-forest);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Utilities & Components */
+.bg-ivory { background-color: #FAF8F3; }
+.bg-cream { background-color: #F2EEE5; }
+.bg-sage { background-color: #B8C8AD; }
+.bg-forest { background-color: #24483B; }
+.bg-forest-dark { background-color: #1A362C; }
+.bg-peach { background-color: #EBC9B8; }
+.bg-lavender { background-color: #E6E0F1; }
+
+.text-forest { color: #24483B; }
+.text-forest-dark { color: #1A362C; }
+.text-charcoal { color: #292D29; }
+.text-muted-charcoal { color: #626A62; }
+.text-sage { color: #6F8761; }
+
+.border-card { border-color: rgba(36, 72, 59, 0.09); }
+.border-forest { border-color: #24483B; }
+
+.card-cult {
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 72, 59, 0.08);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(36, 72, 59, 0.04), 0 2px 6px -1px rgba(36, 72, 59, 0.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-cult:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(36, 72, 59, 0.08), 0 4px 12px -2px rgba(36, 72, 59, 0.04);
+}
+
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EEE5;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8C8AD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #24483B;
+}
