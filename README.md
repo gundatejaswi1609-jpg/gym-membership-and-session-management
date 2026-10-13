@@ -150,7 +150,7 @@ users
 - **Durability:** Committed records persist directly to MySQL InnoDB disk tables.
 
 
-###ER diagram:
+ER diagram:
 
 
 
