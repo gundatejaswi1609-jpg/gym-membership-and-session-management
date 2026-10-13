@@ -225,7 +225,7 @@ If you need to share the application with evaluators, examiners, or test on mobi
 ```bash
 /opt/homebrew/bin/cloudflared tunnel --url http://localhost:3000
 ```
-- **Active Live Public URL:** [https://nick-shaw-mailed-director.trycloudflare.com](https://nick-shaw-mailed-director.trycloudflare.com)
+- **Active Live Public URL:** [https://characterization-employ-chronicle-predictions.trycloudflare.com](https://characterization-employ-chronicle-predictions.trycloudflare.com)
 - **Permanent Vercel Production URL:** [https://gym-membership-and-session-management.vercel.app](https://gym-membership-and-session-management.vercel.app)
 *Connects directly through your local machine to the live MySQL 8 database and Flask REST API.*
 
