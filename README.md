@@ -151,6 +151,9 @@ users
 
 
 ###ER diagram:
+
+
+
 [MEMBER] 
    │
    ├── (1:N) ──> [BOOKING_HOLDS] (Temporary 5-min row lock to prevent race conditions)
