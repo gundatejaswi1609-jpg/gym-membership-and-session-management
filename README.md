@@ -149,6 +149,22 @@ users
 - **Isolation:** Row-level locks (`SELECT ... FOR UPDATE`) prevent race conditions when multiple members attempt to book the last available seat simultaneously.
 - **Durability:** Committed records persist directly to MySQL InnoDB disk tables.
 
+
+###ER diagram:
+[MEMBER] 
+   │
+   ├── (1:N) ──> [BOOKING_HOLDS] (Temporary 5-min row lock to prevent race conditions)
+   │
+   ├── (1:N) ──> [CLASS_REGISTRATIONS] (Displays booking status, fee, pass code `BK-{id}`)
+   │                   │
+   │                   └── (1:1) ──> [CLASS_SCHEDULES] (Session date, start & end time)
+   │                                      ├── (N:1) ──> [FITNESS_CLASSES] (Class name & category)
+   │                                      ├── (N:1) ──> [TRAINERS] (Coach name)
+   │                                      └── (N:1) ──> [ROOMS] (Studio / room name)
+   │
+   └── (1:1) ──> [ATTENDANCE] (Turnstile QR scan triggers check-in, writes `check_in_time`)
+
+
 ---
 
 ## 📊 The 18 Academic DBMS SQL Reports
