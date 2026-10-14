@@ -3,7 +3,7 @@
 # 🏋🏻‍♀️ ApexFit: Premium Fitness Membership, Class Booking & Trainer Management Platform
 **Academic Relational Database Management System (DBMS) Capstone Project**
 
-📂 **Project Documentation & Drive Resources(video presentation):** [Google Drive Folder](https://drive.google.com/drive/folders/1W5XpKGpyv11tgNsavRKcRWUVWGDMwfPE)
+📂 **Project Documentation & Presentations:** [Review Slides & Problem Solving](./DBMS_Presentations_and_Reviews) | [Google Drive Resources (Video Presentation)](https://drive.google.com/drive/folders/1W5XpKGpyv11tgNsavRKcRWUVWGDMwfPE)
 
 ---
 
