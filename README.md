@@ -3,6 +3,8 @@
 # 🏋🏻‍♀️ ApexFit: Premium Fitness Membership, Class Booking & Trainer Management Platform
 **Academic Relational Database Management System (DBMS) Capstone Project**
 
+📂 **Project Documentation & Drive Resources:** [Google Drive Folder](https://drive.google.com/drive/folders/1W5XpKGpyv11tgNsavRKcRWUVWGDMwfPE)
+
 ---
 
 ## 📌 Project Overview
@@ -227,8 +229,9 @@ If you need to share the application with evaluators, examiners, or test on mobi
 ```bash
 /opt/homebrew/bin/cloudflared tunnel --url http://localhost:3000
 ```
-- **Active Live Public URL:** [https://characterization-employ-chronicle-predictions.trycloudflare.com](https://characterization-employ-chronicle-predictions.trycloudflare.com)
+- **Active Live Public URL:** [https://structural-giants-ave-sheer.trycloudflare.com](https://structural-giants-ave-sheer.trycloudflare.com)
 - **Permanent Vercel Production URL:** [https://gym-membership-and-session-management.vercel.app](https://gym-membership-and-session-management.vercel.app)
+- **📁 Google Drive Resources & Documents:** [Google Drive Folder](https://drive.google.com/drive/folders/1W5XpKGpyv11tgNsavRKcRWUVWGDMwfPE)
 *Connects directly through your local machine to the live MySQL 8 database and Flask REST API.*
 
 ---
