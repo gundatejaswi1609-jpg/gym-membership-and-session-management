@@ -153,11 +153,11 @@ users
 - **Isolation:** Row-level locks (`SELECT ... FOR UPDATE`) prevent race conditions when multiple members attempt to book the last available seat simultaneously.
 - **Durability:** Committed records persist directly to MySQL InnoDB disk tables.
 
+### 🗺️ Entity-Relationship (ER) Diagram
 
-ER diagram:
+![ER Diagram – Gym Membership & Fitness Session Management System](./er_diagram.png)
 
-
-
+```
 [MEMBER] 
    │
    ├── (1:N) ──> [BOOKING_HOLDS] (Temporary 5-min row lock to prevent race conditions)
@@ -170,6 +170,7 @@ ER diagram:
    │                                      └── (N:1) ──> [ROOMS] (Studio / room name)
    │
    └── (1:1) ──> [ATTENDANCE] (Turnstile QR scan triggers check-in, writes `check_in_time`)
+```
 
 
 ---
